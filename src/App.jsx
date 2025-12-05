@@ -1,13 +1,22 @@
+import { useState } from 'react';
 import Navbar from './Components/Navbar'
 import {myData, navItems} from './data';
-import {useState, useEffect} from 'react';
-function App() {
-    //const  [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+function App() {
+    const  [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(prev => !prev)
+    }
     return (
-        <>
-            <Navbar name={myData.name} navItems={navItems}/>
-        </>
+        <div>
+            <Navbar
+             name={myData.name} 
+             navItems={navItems}
+             isMenuOpen={isMenuOpen}
+             toggleMenu={toggleMenu}
+            />
+        </div>
     )
 }
 

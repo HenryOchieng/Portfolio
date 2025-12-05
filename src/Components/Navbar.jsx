@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { Menu, X, Zap, Download } from 'lucide-react';
 import { navItems } from '../data';
 
@@ -20,13 +20,43 @@ export default function Navbar({...props}) {
                     ))}
                 </nav>
 
+                {/* Desktop Action Button */}        
                 <div className='hidden md:block header__mobile-action'>
                     <button className='btn-secondary'>
                         <Download className='w-4 h-4' />
-                        <span>Download Resume</span>
+                        <span>Download CV</span>
                     </button>
                 </div>
+
+                {/* Mobile Menu Button */}
+                <button 
+                    className='header__mobile-toggle'
+                    onClick={props.toggleMenu}
+                    arial-label='Toggle Menu'
+                >
+                        {props.isMenuOpen ? <X className='w-6 h-6'/> : <Menu className='w-6 h-6' />}
+                </button>
             </div>
+
+            {/* Mobile Menu Dropdown */}
+            {props.isMenuOpen && (
+                <div className='header__mobile-menu' style={{ display: props.isMenuOpen ? 'block' : 'none'}}>
+                    <nav>
+                        {props.navItems.map((item) => (
+                            <a 
+                                key={item.name}
+                                href={item.href}
+                                onClick={() =>props.setMenuOpen(false)}
+                            >
+                                {item.name}
+                            </a>
+                        ))}
+                        <button className='btn-secondary' style={{ marginTop: '16px', marginLeft: '1rem', width: 'calc(100% - 2rem)'}}>
+                            Download CV
+                        </button>
+                    </nav>
+                </div>
+            )}
         </header>
     )
 }
