@@ -1,4 +1,4 @@
-import { Code } from 'lucide-react'
+import { Code, Mail } from 'lucide-react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Hero({...props}) {
@@ -22,7 +22,10 @@ export default function Hero({...props}) {
                         <FaLinkedin className='w-8 h-8'/>
                     </a>
                     <a href={props.socials.github} target='_blank' rel='noopener noreferrer'>
-                        <FaGithub className='w-8 h-8'/>
+                        <FaGithub className='w-8 h-8' />
+                    </a>
+                    <a href={props.socials.email} target='_blank' rel='noopener noreferrer'>
+                        <Mail className='w-8 h-8'/>
                     </a>
                 </div>
 
