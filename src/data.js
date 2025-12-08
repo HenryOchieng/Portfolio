@@ -17,8 +17,8 @@ export const myData = {
   ],
   contact: {
     email: "alex.johnson@example.com",
-    linkedin: "https://linkedin.com/in/alexjohnson",
-    github: "https://github.com/alexjohnson",
+    linkedin: "https://linkedin.com/in/henry-ndaga",
+    github: "https://github.com/HenryOchieng",
   }
 };
 

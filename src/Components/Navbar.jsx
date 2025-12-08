@@ -1,6 +1,4 @@
-//import React from 'react';
 import { Menu, X, Zap, Download } from 'lucide-react';
-import { navItems } from '../data';
 
 export default function Navbar({...props}) {
     return (
@@ -13,7 +11,7 @@ export default function Navbar({...props}) {
 
                 {/* Desktop Navigation */}
                 <nav className='header__nav'>
-                    {navItems.map((item) => (
+                    {props.navItems.map((item) => (
                         <a key={item.name} href={item.href}>
                             {item.name}
                         </a>

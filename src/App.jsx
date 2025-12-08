@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
 import {myData, navItems} from './data';
 
 function App() {
@@ -9,13 +10,20 @@ function App() {
         setIsMenuOpen(prev => !prev)
     }
     return (
-        <div>
+        <div className='portfolio-app-root'>
             <Navbar
              name={myData.name} 
              navItems={navItems}
              isMenuOpen={isMenuOpen}
              toggleMenu={toggleMenu}
             />
+            <main>
+                <Hero 
+                    name={myData.name}
+                    title={myData.title}
+                    socials={myData.contact}
+                />
+            </main>
         </div>
     )
 }
