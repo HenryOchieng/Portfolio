@@ -1,8 +1,10 @@
 import { useState } from 'react';
+//import { Navbar, Hero, About, Skills } from './Components';
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import About from './Components/About'
 import Skills from './Components/Skills'
+import Projects from './Components/Projects'
 import {myData, navItems} from './data';
 
 function App() {
@@ -31,6 +33,9 @@ function App() {
                 />
                 <Skills 
                     stack={myData.skills}
+                />
+                <Projects 
+                    works={myData.projects}
                 />
             </main>
         </div>
