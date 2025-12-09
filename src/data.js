@@ -22,6 +22,7 @@ export const myData = {
     email: "mailto:henryochieng8@gmail.com",
     linkedin: "https://linkedin.com/in/henry-ndaga",
     github: "https://github.com/HenryOchieng",
+    text: "Have a project idea, a job opportunity, or just want to chat about tech?"
   }
 };
 

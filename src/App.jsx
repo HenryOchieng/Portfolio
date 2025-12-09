@@ -5,6 +5,7 @@ import Hero from './Components/Hero'
 import About from './Components/About'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
+import Contact from './Components/Contact'
 import {myData, navItems} from './data';
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
                 />
                 <Projects 
                     works={myData.projects}
+                />
+                <Contact
+                    contact={myData.contact} 
                 />
             </main>
         </div>
