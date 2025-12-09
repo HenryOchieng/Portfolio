@@ -6,6 +6,7 @@ import About from './Components/About'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 import {myData, navItems} from './data';
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
                 />
                 <Contact
                     contact={myData.contact} 
+                />
+                <Footer 
+                    name={myData.name}
                 />
             </main>
         </div>
