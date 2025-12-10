@@ -11,6 +11,10 @@
     --color-border: #374151;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* Global scroll behavior and font */
 html { 
     /* Smooth scrolling enabled here */
