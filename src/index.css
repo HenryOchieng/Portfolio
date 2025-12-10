@@ -279,15 +279,18 @@ section {
 }
 
 .skill-pill {
-    display: flex;
+    display: grid;
     align-items: center;
-    gap: 12px;
+    gap: 0.5rem;
     background-color: rgba(55, 65, 81, 0.5);
     padding: 12px;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(20, 184, 166, 0.3);
     transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .skill-pill:hover {
@@ -306,6 +309,9 @@ section {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--color-text-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .skill-pill__progress-bar {
@@ -313,6 +319,9 @@ section {
     background-color: #4b5563;
     border-radius: 9999px;
     margin-top: 4px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .skill-pill__progress-fill {
@@ -325,6 +334,8 @@ section {
     font-size: 0.75rem;
     color: #5eead4;
     font-family: monospace;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 /* --- Projects Section --- */
