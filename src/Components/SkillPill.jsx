@@ -10,7 +10,7 @@ export default function SkillPill({name, level}) {
                     <div className='skill-pill__progress-fill' style={{ width: level }}></div>
                 </div>
             </div>
-            <span className='skill-pill__leve'>{level}</span>
+            <span className='skill-pill__level'>{level}</span>
         </div>
     )
 }
