@@ -44,12 +44,12 @@ export default function Navbar({...props}) {
                             <a 
                                 key={item.name}
                                 href={item.href}
-                                onClick={() =>props.setMenuOpen(false)}
+                                //onClick={() =>props.setMenuOpen(false)}
                             >
                                 {item.name}
                             </a>
                         ))}
-                        <button className='btn-secondary'>
+                        <button className='btn-secondary mobile-cv-btn'>
                             Download CV
                         </button>
                     </nav>

@@ -11,6 +11,10 @@
     --color-border: #374151;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* Global scroll behavior and font */
 html { 
     /* Smooth scrolling enabled here */
@@ -86,7 +90,8 @@ section {
 
 /* Wrappers */
 .container {
-    max-width: 1280px;
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -169,12 +174,12 @@ section {
     display: block;
 }
 
-/*.mobile-cv-btn {
+.mobile-cv-btn {
     display: block;
     width: calc(100% - 2rem);
     margin: 1rem auto 0 auto;
     box-sizing: border-box;
-}*/
+}
 
 /* --- Hero Section --- */
 .hero {
