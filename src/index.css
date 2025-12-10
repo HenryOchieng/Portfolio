@@ -165,6 +165,16 @@ section {
     color: var(--color-primary);
 }
 
+.header__mobile-menu.open {
+    display: block;
+}
+
+/*.mobile-cv-btn {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 1rem auto 0 auto;
+    box-sizing: border-box;
+}*/
 
 /* --- Hero Section --- */
 .hero {
@@ -452,6 +462,7 @@ section {
 @media (min-width: 640px) {
     .container {
         padding: 0 1.5rem;
+        box-sizing: border-box;
     }
 }
 

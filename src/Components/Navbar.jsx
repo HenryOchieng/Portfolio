@@ -30,15 +30,15 @@ export default function Navbar({...props}) {
                 <button 
                     className='header__mobile-toggle'
                     onClick={props.toggleMenu}
-                    arial-label='Toggle Menu'
+                    aria-label='Toggle Menu'
                 >
-                        {props.isMenuOpen ? <X className='w-6 h-6'/> : <Menu className='w-6 h-6' />}
+                    {props.isMenuOpen ? <X className='w-6 h-6'/> : <Menu className='w-6 h-6' />}
                 </button>
             </div>
 
             {/* Mobile Menu Dropdown */}
             {props.isMenuOpen && (
-                <div className='header__mobile-menu' style={{ display: props.isMenuOpen ? 'block' : 'none'}}>
+                <div className={`header__mobile-menu ${props.isMenuOpen ? 'open' : ''}`}>
                     <nav>
                         {props.navItems.map((item) => (
                             <a 
@@ -49,7 +49,7 @@ export default function Navbar({...props}) {
                                 {item.name}
                             </a>
                         ))}
-                        <button className='btn-secondary' style={{ marginTop: '16px', marginLeft: '1rem', width: 'calc(100% - 2rem)'}}>
+                        <button className='btn-secondary'>
                             Download CV
                         </button>
                     </nav>
