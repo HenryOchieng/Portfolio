@@ -349,6 +349,7 @@ section {
     font-size: 1.125rem;
     color: var(--color-text-muted);
     text-align: center;
+    font-style: italic;
 }
 
 /* --- Skills Section --- */
