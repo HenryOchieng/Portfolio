@@ -19,10 +19,16 @@ export default function Navbar({...props}) {
                 </nav>
         
                 <div className='hidden md:block header__mobile-action'>
-                    <button className='btn-secondary'>
-                        <Download className='w-4 h-4' />
-                        <span>Download CV</span>
-                    </button>
+                    <a
+                        href="/Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-secondary"
+                        >
+                        <Download className="w-4 h-4" />
+                        <span>View CV</span>
+                    </a>
+
                 </div>
 
                 <button 
