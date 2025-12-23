@@ -1,7 +1,9 @@
 import { Code, Mail } from 'lucide-react'
+import Typewriter from './Typewriter'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Hero({...props}) {
+    console.log("Hero name:", props.name);
     return (
         <section className="hero">
             <div className="container">
@@ -11,7 +13,8 @@ export default function Hero({...props}) {
 
                 <p className='hero__greeting'>Hello, I'm</p>
                 <h1 className='hero__name'>
-                    {props.name}
+                    <Typewriter text={props.name} speed={120}/>
+                    <span className='cursor'>|</span>
                 </h1>
                 <h2 className='hero__title'>
                     {props.title} 
