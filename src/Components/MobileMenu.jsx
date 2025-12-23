@@ -22,7 +22,7 @@ export default function MobileMenu({ open, onClose }) {
         })
     }
 
-    const links = [ 'Home', 'About', 'Projects', 'Skills', 'Contact']
+    const links = [ 'About', 'Skills', 'Projects', 'Contact']
 
     return (
         <AnimatePresence>
