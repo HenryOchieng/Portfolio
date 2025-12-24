@@ -34,10 +34,13 @@ Netlify – deployment
 
 ##🚀 Getting Started
 Clone the repository
+
 git clone https://github.com/your-username/portfolio.git
 
 Install dependencies
+
 npm install
 
 Run locally
+
 npm run dev
