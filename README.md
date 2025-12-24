@@ -31,3 +31,12 @@ HTML5 & CSS3
 Framer Motion – animations
 
 Netlify – deployment
+
+## 📂 Project Structure
+src/
+ ├── components/     # Reusable UI components
+ ├── data/           # Centralized project & profile data
+ ├── assets/         # Images, icons, CV
+ ├── styles/         # Global & component styles
+ ├── App.jsx
+ └── main.jsx
