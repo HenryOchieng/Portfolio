@@ -1,10 +1,10 @@
-🌐 Henry Ndaga — Personal Portfolio
+## 🌐 Henry Ndaga — Personal Portfolio
 
 A modern, responsive personal portfolio website built with React to showcase my skills, projects, and professional journey in IT Support and Software Development.
 
 🔗 Live Demo: https://henryndaga.netlify.app/
 
-✨ Features
+## ✨ Features
 
 ⚡ Clean and responsive UI (mobile-first design)
 
