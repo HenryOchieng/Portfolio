@@ -1,5 +1,5 @@
-import { useState } from 'react';
-//import { Navbar, Hero, About, Skills } from './Components';
+import { useEffect, useState } from 'react';
+import Loader from './Components/Loader';
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import About from './Components/About'
@@ -10,7 +10,20 @@ import Footer from './Components/Footer'
 import {myData, navItems} from './data';
 
 function App() {
+    const [loading, setLoading] = useState(true)
     const  [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false)
+        }, 1500)
+
+        return () => clearTimeout(timer)
+    }, [])
+
+    if (loading) {
+        return <Loader />
+    }
 
     const toggleMenu = () => {
         setIsMenuOpen(prev => !prev)
