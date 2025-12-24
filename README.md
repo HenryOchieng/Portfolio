@@ -19,3 +19,15 @@ A modern, responsive personal portfolio website built with React to showcase my 
 🧩 Modular, reusable React components
 
 🌙 Optimized for performance and accessibility
+
+## 🛠️ Built With
+
+React – UI development
+
+JavaScript (ES6+)
+
+HTML5 & CSS3
+
+Framer Motion – animations
+
+Netlify – deployment
