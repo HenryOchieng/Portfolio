@@ -20,7 +20,7 @@ export const myData = {
   ],
   contact: {
     email: "mailto:henryochieng8@gmail.com",
-    linkedin: "https://linkedin.com/in/henry-ndaga",
+    linkedin: "https://linkedin.com/",
     github: "https://github.com/HenryOchieng",
     text: "Have a project idea, a job opportunity, or just want to chat about tech?"
   }
